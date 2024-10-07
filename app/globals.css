@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animation-slideFromLeft {
+    @apply animate-slideFromLeft;
+  }
+
+  .animation-slideFromRight {
+    @apply animate-slideFromRight;
+  }
+
+  .animation-slideFromTop {
+    @apply animate-slideFromTop;
+  }
+
+  .animation-slideFromBottom {
+    @apply animate-slideFromBottom;
+  }
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+  }
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+
+.top-nav {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  color: #707070;
+  font-size: 16px;
+}
+
+
+
+.top-nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav-left-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  gap: 30px;
+}
+
+.top-nav-left-icon {
+  font-size: 20px;
+  color: #707070;
+  cursor: pointer;
+}
+
+.icon1{
+  color: #000;
+  cursor: pointer;
+}
+.icon1:hover{
+  color: #6aff65;
+  transition: 0.4s;
+  transform: translateY(-5px);
+
+}
+
+
+.icon2{
+  color: #000;
+  cursor: pointer;
+}
+.icon2:hover{
+  color: #ff5cc1;
+  transition: 0.4s;
+  transform: translateY(-5px);
+
+}
+
+
+.icon3{
+  color: #000;
+  cursor: pointer;
+}
+.icon3:hover{
+  color: #30acff;
+  transition: 0.4s;
+  transform: translateY(-5px);
+}
+
+.button{
+  background-color: #5da9ff;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #313131;
+  transition: 0.6s;
+}
+
+
+
+.middle-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px ;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.group:hover a {
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.group-hover:underline-animation {
+  animation: underline-animation 0.3s ease-in-out;
+}
+
+@keyframes underline-animation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.group-hover .dropdown {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.image-comparison-slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007bff;
+}
