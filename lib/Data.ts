@@ -31,7 +31,7 @@ export const Dentist = {
           '/images/pd2.png', 
     ],
           location: 'logments berrouaghia, Médéa, Algeria',
-    logo:'/images/bouzidLogo2.png',
+    logo:'/images/logo.png',
     navText:'Bienvenue à Clinique Smile Dentaire',
     phone1:'05 52 37 58 11',
     phone2:'+213 552 37 58 11',

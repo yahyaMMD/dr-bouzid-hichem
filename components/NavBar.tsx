@@ -73,7 +73,6 @@ export default function NavBar() {
             width={100}
             height={100}
             alt="logo"
-            className="rounded-full"
           />
           </a>
         </div>
@@ -218,7 +217,7 @@ export default function NavBar() {
             width={140}
             height={100}
             alt="logo"
-            className="rounded-full my-2"
+            className="mt-4"
           />
           </a>
         </div>
