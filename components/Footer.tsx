@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-row gap-6">
             <div className="flex items-center justify-center rounded-full bg-blue-800 w-12 h-12 cursor-pointer social-icon">
-              <a href="https://www.facebook.com/profile.php?id=61558113706258&mibextid=LQQJ4d">
+              <a href="https://web.facebook.com/Docteur.hichem.bouzid">
 
               <FontAwesomeIcon
                 icon={faFacebookF}
@@ -46,7 +46,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex items-center justify-center rounded-full bg-pink-600 w-12 h-12 cursor-pointer social-icon">
-              <a href="https://www.instagram.com/centre_dentaire_bab_ezzouar/">
+              <a href="/">
 
               <FontAwesomeIcon
                 icon={faInstagram}
@@ -56,8 +56,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex items-center justify-center rounded-full bg-blue-400 w-12 h-12 cursor-pointer social-icon">
-              <a href="https://maps.app.goo.gl/6XJUUSSUTtXoHbAh7">
-
+              <a href="https://maps.app.goo.gl/g9qg1Bj5TzGpmqdb9">
               <FontAwesomeIcon
                 icon={faLocationDot}
                 style={{ color: "#ffffff" }}
